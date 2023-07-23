@@ -1,0 +1,14 @@
+{
+    "type": "service_account",
+    "project_id": "agile-ratio-391018",
+    "private_key_id": "bb4f7a5bb2d9d3f9ec21a3419e1b7cbbc2d5f7c9",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1EP/PAsZq9k04\nXjpGVhmrI2Q7/u6qFdXBzuUaoQOchO/exgAf7NS6+67IvH8FaxB84URcNdoSwbv0\nihjK+1hTOej1RRczs/84hlNap2UwcT1g22IYNZqk4LSrbmFyNFE2WmMHLjg8BFc5\nGdVFJwHRUx95B4A2xWb+bFbZdKq1LhJuI+L5ItEsxkV3sfvw6RX4RALxzLcdF762\nxhV4+ImBU5JOph4ocTV3tqeEdPM0k+Ozf5x5vzzLbUJDdhtvAUXz3D5nOig2KR7U\nYnG/857R3tkRmCgI+Pityzf+Gan08iZvrtChswCHLRf+qZ+SuHjFd8s8xuZ4kmEU\nMIetejwdAgMBAAECggEAFUIqLpVeU2eYmGIjyGdKezfcCFk9jzWiE6+lYXN/F4za\nFtc7Y4QsU8nB8yqCZVH1LRxLqOHfuS0K0sK193r8G0VkzwsuFrFu6SWIOtAFhuL8\nuFb5lOsSPYJuY+RBR6XR1SZWkxy/mHhP/1HDoutaAMgYHV8elA+oMH3q0nwqoLvV\n9n9fF/N5Q0uJftZIddBV+JE4UqQW2LaVCMmXhXJ8pyNi129vGk7lN+Bchqca1jSy\ncM421XqYvddD6zF8+BAqLwN6xlEsbOvESg0tgZ7k0j3Y7XVjecDfWf3h/WTpHoNt\nAxlqElFZRPRL8mrZL5Ae+CpRoMM/6vmNVssV8r6OFwKBgQDc+OxVKlOTuCtgng0y\nyuxxqDGycnR+XAGP7/6qZal5+7VgRpz15UtszVpfiu/jxcfymCdYcdo4b4ODjsou\nxoL4sxSun3DO1ZMrRhbKDFZV5627mQLofJiQdytLE5wJPlCwUqoBvfjzeRz6iAFD\nSRvEoSBFLXOxsmv/fhecdIQKqwKBgQDRxLBsNeVf3Wnxf0WOPV2/v18oB0p2+ggR\nWmEiaUvUfvInfZaFvpCMTb/UbPsSN5mIOK8p6DTs7Apssf8UJgkD1fFF9bwdtBae\nPVl13nydd6LHOUI5Ti6yi1La24W2SrdegdBziaICmRCiUnuXcgrPtrS4pRzrVqlS\n0cD+U0/UVwKBgA2GIpi3xXO2Atmf8rjYGI6AN8JvJNgS83mGu7RcEnpHwHsK91JJ\nXUtkahKM40+ybCFZ1JaiKTPpB0iG9bLVLXDhLPPfCD1wbthoKr7k8GfDjSt9GuN1\ntLSqxniK07LxIGkaNhNzOAhWskJXDpS6pbtsDRiOxpTqkZeKdRF7RBWPAoGBAM+X\ngCTGvaW+f+7/zfzzHAj7wZbiiD3wOPW7ZK9iVyoHK2wLbGAVdAV1mCcIZvvjTCy0\nNB0b8Oyat8JT8KSm83r5Sdm7U5xtsYiOHC96rAZF9DCGqNP/XFVTbf6rCsuZa5i6\njWkZxtwdUInjaO46bRqcrIKi3FjGHbGZZQ4Lss/nAoGBAKt1AZf2N7wEQm/pKZyd\nP9fMWhIIllI+4z56UczGaibzFPI/LYuUZf5xQz+NHM+PgSDAmP0IftlP26w9upOK\nN3Zul4tltreJCE5ZNj0dxWAcZ4kwbWULNHoQ1EZXg11276PZdyTZlLcCOEaUngaP\nsm745Hs9vOLT1dE7dxsYaO8M\n-----END PRIVATE KEY-----\n",
+    "client_email": "agile-ratio-391018@agile-ratio-391018.iam.gserviceaccount.com",
+    "client_id": "116700862695864485518",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/agile-ratio-391018%40agile-ratio-391018.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+  

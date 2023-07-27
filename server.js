@@ -19,18 +19,12 @@ const vision = google.vision('v1');
 
 app.use(express.json());
 
-app.post('/analyze-photos', upload.fields([
-  { name: 'plateImage', maxCount: 1 },
-  { name: 'odometerImage', maxCount: 1 },
-  { name: 'fuelPumpImage', maxCount: 1 },
-  { name: 'fuelPumpImage2', maxCount: 1 },
-]), async (req, res) => {
+app.post('/analyze-photos', upload.any(), async (req, res) => {
   try {
-    const plateImagePath = req.files['plateImage'][0].path;
-    const odometerImagePath = req.files['odometerImage'][0].path;
-    const fuelPumpImagePath = req.files['fuelPumpImage'][0].path;
-    const fuelPumpImage2Path = req.files['fuelPumpImage2'][0].path;
-
+    const plateImagePath = req.files[0].path;
+    const odometerImagePath = req.files[1].path;
+    const fuelPumpImagePath = req.files[2].path;
+    const fuelPumpImage2Path = req.files[3].path;
 
     const plateImageUrl = await uploadImageToStorage(plateImagePath);
     const odometerImageUrl = await uploadImageToStorage(odometerImagePath);
@@ -42,29 +36,10 @@ app.post('/analyze-photos', upload.fields([
     const fuelPumpInfo = await analyzeImage(fuelPumpImageUrl);
     const fuelPump2Info = await analyzeImage(fuelPumpImage2Url);
 
-    fs.unlink(plateImagePath, (err) => {
-      if (err) {
-        console.error('Erro ao excluir o arquivo da placa:', err);
-      }
-    });
-
-    fs.unlink(odometerImagePath, (err) => {
-      if (err) {
-        console.error('Erro ao excluir o arquivo do odômetro:', err);
-      }
-    });
-
-    fs.unlink(fuelPumpImagePath, (err) => {
-      if (err) {
-        console.error('Erro ao excluir o arquivo da bomba de combustível:', err);
-      }
-    });
-
-    fs.unlink(fuelPumpImage2Path, (err) => {
-      if (err) {
-        console.error('Erro ao excluir o segundo arquivo da bomba de combustível:', err);
-      }
-    });
+    removeFile(plateImagePath);
+    removeFile(odometerImagePath);
+    removeFile(fuelPumpImagePath);
+    removeFile(fuelPumpImage2Path);
 
     res.json({
       plateInfo,
@@ -121,3 +96,13 @@ const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
+
+function removeFile(filePath) {
+  fs.unlink(filePath, (err) => {
+    if (err) {
+      console.error('Erro ao excluir o arquivo:', err);
+    }
+  });
+}
+
+// ngrok http 3000 // para executar o tunel, modificar a rota
